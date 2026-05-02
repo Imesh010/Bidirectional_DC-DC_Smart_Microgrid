@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1543, 831]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">80</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="control" SID="370">
+    <P Name="Position">[2170, 43, 2200, 57]</P>
+    <P Name="ZOrder">61267</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="HideAutomaticName">off</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Battery_Switching_Control" SID="211">
+    <P Name="Ports">[1, 0, 0, 0, 0, 4, 2]</P>
+    <P Name="Position">[1420, 70, 1615, 373]</P>
+    <P Name="ZOrder">61260</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <P Name="PortSchema">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;sides&quot;:[{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;LConn1&quot;,&quot;LConn2&quot;,&quot;LConn3&quot;,&quot;LConn4&quot;]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;4f9bf2e4-b5fa-42d9-a0e5-3e3ebeef4a6b&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;In1&quot;,&quot;RConn1&quot;,&quot;RConn2&quot;],&quot;side&quot;:&quot;RIGHT&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;dfbb30f6-db7f-4d15-a62c-cfa6951cf2de&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[],&quot;side&quot;:&quot;TOP&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;3350e895-5872-448d-93ce-bd5f41ed6bf4&quot;}]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedConnector&quot;,&quot;uuid&quot;:&quot;3e538079-30fe-458f-bfc1-81acdff3d020&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/Connector/R2020b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <System Ref="system_211"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Buck-Boost_Converter" SID="224">
+    <P Name="Ports">[0, 0, 0, 0, 0, 4, 4]</P>
+    <P Name="Position">[775, 73, 980, 372]</P>
+    <P Name="ZOrder">61265</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_224"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Cone\nection Control" SID="198">
+    <P Name="Ports">[1, 0, 0, 0, 0, 3, 6]</P>
+    <P Name="Position">[150, 22, 290, 366]</P>
+    <P Name="ZOrder">61256</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <P Name="PortSchema">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;sides&quot;:[{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;LConn1&quot;,&quot;LConn2&quot;,&quot;LConn3&quot;]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;55632da7-3ad4-403b-ab95-4dd68f45ab41&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;In1&quot;,&quot;RConn1&quot;,&quot;RConn2&quot;,&quot;RConn3&quot;,&quot;RConn4&quot;,&quot;RConn5&quot;,&quot;RConn6&quot;],&quot;side&quot;:&quot;RIGHT&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;a4d4bb29-7e15-4f83-bb3c-deca1e672851&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[],&quot;side&quot;:&quot;TOP&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;af3c3182-2455-4113-bd3e-b08edbb8e53f&quot;}]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedConnector&quot;,&quot;uuid&quot;:&quot;241904a1-6d85-4276-97c3-affb87304769&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/Connector/R2020b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <System Ref="system_198"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="DC-AC / AC-DC&#xA;Converter" SID="98">
+    <P Name="Ports">[0, 0, 0, 0, 0, 6, 4]</P>
+    <P Name="Position">[400, 70, 630, 370]</P>
+    <P Name="ZOrder">61213</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_98"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="DC-DC_Converter_with_Battery_Controller" SID="280">
+    <P Name="Ports">[0, 0, 0, 0, 0, 4, 4]</P>
+    <P Name="Position">[1140, 72, 1325, 373]</P>
+    <P Name="ZOrder">61266</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_280"/>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Grid R" SID="371">
+    <P Name="Position">[45, 73, 75, 87]</P>
+    <P Name="ZOrder">61268</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Grid Y" SID="372">
+    <P Name="Position">[45, 188, 75, 202]</P>
+    <P Name="ZOrder">61269</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Grid B" SID="373">
+    <P Name="Position">[45, 303, 75, 317]</P>
+    <P Name="ZOrder">61270</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Vehicle +" SID="374">
+    <P Name="Position">[1745, 213, 1775, 227]</P>
+    <P Name="ZOrder">61271</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">4</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Vehicle -" SID="375">
+    <P Name="Position">[1745, 313, 1775, 327]</P>
+    <P Name="ZOrder">61272</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">5</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">319</P>
+    <P Name="Src">198#rconn:5</P>
+    <P Name="Dst">98#lconn:5</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">316</P>
+    <P Name="Src">198#rconn:2</P>
+    <P Name="Dst">98#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">337</P>
+    <P Name="Src">98#rconn:2</P>
+    <P Name="Dst">224#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">317</P>
+    <P Name="Src">198#rconn:3</P>
+    <P Name="Dst">98#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">330</P>
+    <P Name="Src">280#rconn:3</P>
+    <P Name="Dst">211#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">324</P>
+    <P Name="Src">280#lconn:1</P>
+    <P Name="Dst">224#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">338</P>
+    <P Name="Src">98#rconn:3</P>
+    <P Name="Dst">224#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">315</P>
+    <P Name="Src">198#rconn:1</P>
+    <P Name="Dst">98#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">343</P>
+    <P Name="Src">371#rconn:1</P>
+    <P Name="Dst">198#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">344</P>
+    <P Name="Src">372#rconn:1</P>
+    <P Name="Dst">198#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">318</P>
+    <P Name="Src">198#rconn:4</P>
+    <P Name="Dst">98#lconn:4</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">345</P>
+    <P Name="Src">373#rconn:1</P>
+    <P Name="Dst">198#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">320</P>
+    <P Name="Src">198#rconn:6</P>
+    <P Name="Dst">98#lconn:6</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">328</P>
+    <P Name="Src">280#lconn:4</P>
+    <P Name="Dst">224#rconn:4</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">346</P>
+    <P Name="Src">374#rconn:1</P>
+    <P Name="Dst">211#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">342</P>
+    <P Name="Src">370#out:1</P>
+    <P Name="Points">[-87, 0]</P>
+    <Branch>
+      <P Name="ZOrder">341</P>
+      <P Name="Points">[-837, 0; 0, -5]</P>
+      <P Name="Dst">198#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">340</P>
+      <P Name="Points">[0, 70]</P>
+      <P Name="Dst">211#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">336</P>
+    <P Name="Src">98#rconn:1</P>
+    <P Name="Dst">224#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">339</P>
+    <P Name="Src">98#rconn:4</P>
+    <P Name="Dst">224#lconn:4</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">321</P>
+    <P Name="Src">280#rconn:2</P>
+    <P Name="Dst">211#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">322</P>
+    <P Name="Src">280#rconn:4</P>
+    <P Name="Dst">211#lconn:4</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">347</P>
+    <P Name="Src">375#rconn:1</P>
+    <P Name="Dst">211#rconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">326</P>
+    <P Name="Src">280#lconn:2</P>
+    <P Name="Dst">224#rconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">325</P>
+    <P Name="Src">224#rconn:3</P>
+    <P Name="Dst">280#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">327</P>
+    <P Name="Src">280#rconn:1</P>
+    <P Name="Dst">211#lconn:1</P>
+  </Line>
+</System>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1543, 831]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">40</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="281">
+    <P Name="Ports">[0, 0, 0, 0, 0, 8]</P>
+    <P Name="Position">[860, 604, 925, 756]</P>
+    <P Name="ZOrder">6165</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_281"/>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_out +" SID="355">
+    <P Name="Position">[655, 23, 685, 37]</P>
+    <P Name="ZOrder">6157</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_out -" SID="356">
+    <P Name="Position">[655, 358, 685, 372]</P>
+    <P Name="ZOrder">6158</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Charge_in +" SID="357">
+    <P Name="Position">[40, 593, 70, 607]</P>
+    <P Name="ZOrder">6162</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Charge_in -" SID="358">
+    <P Name="Position">[40, 988, 70, 1002]</P>
+    <P Name="ZOrder">6164</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">4</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_in +" SID="359">
+    <P Name="Position">[20, 208, 50, 222]</P>
+    <P Name="ZOrder">6159</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">5</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_in -" SID="360">
+    <P Name="Position">[20, 358, 50, 372]</P>
+    <P Name="ZOrder">6160</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">6</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_out +" SID="361">
+    <P Name="Position">[830, 763, 860, 777]</P>
+    <P Name="ZOrder">6161</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">7</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_out -" SID="362">
+    <P Name="Position">[830, 988, 860, 1002]</P>
+    <P Name="ZOrder">6163</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">8</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">1</P>
+    <P Name="Src">281#lconn:1</P>
+    <P Name="Points">[-4, 0; 0, -671; -281, 0; 0, 91]</P>
+    <P Name="Dst">355#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">2</P>
+    <P Name="Src">281#lconn:2</P>
+    <P Name="Points">[-6, 0; 0, -681; -269, 0; 0, 416]</P>
+    <P Name="Dst">356#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3</P>
+    <P Name="Src">359#rconn:1</P>
+    <P Name="Points">[344, 0; 0, 435]</P>
+    <P Name="Dst">281#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">4</P>
+    <P Name="Src">281#lconn:4</P>
+    <P Name="Points">[-506, 0; 0, -305]</P>
+    <P Name="Dst">360#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">5</P>
+    <P Name="Src">281#lconn:5</P>
+    <P Name="Points">[-11, 0; 0, -711; -234, 0; 0, 791]</P>
+    <P Name="Dst">361#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">6</P>
+    <P Name="Src">357#rconn:1</P>
+    <P Name="Points">[144, 0; 0, 110]</P>
+    <P Name="Dst">281#lconn:6</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">7</P>
+    <P Name="Src">281#lconn:7</P>
+    <P Name="Points">[-15, 0; 0, -731; -210, 0; 0, 996]</P>
+    <P Name="Dst">362#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">8</P>
+    <P Name="Src">281#lconn:8</P>
+    <P Name="Points">[-519, 0; 0, 245]</P>
+    <P Name="Dst">358#rconn:1</P>
+  </Line>
+</System>

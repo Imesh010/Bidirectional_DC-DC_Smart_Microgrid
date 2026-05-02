@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[30, 30, 1010, 750]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="control" SID="212">
+    <P Name="Position">[545, 23, 575, 37]</P>
+    <P Name="ZOrder">5900</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="HideAutomaticName">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Ideal Switch" SID="213">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[170, 363, 230, 407]</P>
+    <P Name="ZOrder">5892</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsIdealSwitchLib/Ideal Switch</P>
+    <P Name="SourceType">Ideal Switch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.001</P>
+      <P Name="Lon">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf</P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Ideal Switch1" SID="214">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[170, 263, 230, 307]</P>
+    <P Name="ZOrder">5893</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsIdealSwitchLib/Ideal Switch</P>
+    <P Name="SourceType">Ideal Switch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.001</P>
+      <P Name="Lon">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf</P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Ideal Switch2" SID="215">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[170, 163, 230, 207]</P>
+    <P Name="ZOrder">5894</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsIdealSwitchLib/Ideal Switch</P>
+    <P Name="SourceType">Ideal Switch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.001</P>
+      <P Name="Lon">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf</P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Ideal Switch3" SID="216">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[170, 78, 230, 122]</P>
+    <P Name="ZOrder">5895</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsIdealSwitchLib/Ideal Switch</P>
+    <P Name="SourceType">Ideal Switch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.001</P>
+      <P Name="Lon">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf</P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="217">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[325, 244, 355, 276]</P>
+    <P Name="ZOrder">5899</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge +" SID="218">
+    <P Name="Position">[20, 93, 50, 107]</P>
+    <P Name="ZOrder">5902</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge -" SID="219">
+    <P Name="Position">[20, 178, 50, 192]</P>
+    <P Name="ZOrder">5904</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge +" SID="220">
+    <P Name="Position">[20, 278, 50, 292]</P>
+    <P Name="ZOrder">5905</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge -" SID="221">
+    <P Name="Position">[25, 378, 55, 392]</P>
+    <P Name="ZOrder">5906</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">4</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Battery +" SID="222">
+    <P Name="Position">[555, 103, 585, 117]</P>
+    <P Name="ZOrder">5901</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">5</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Battery -" SID="223">
+    <P Name="Position">[555, 188, 585, 202]</P>
+    <P Name="ZOrder">5903</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="Port">6</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">1</P>
+    <P Name="Src">219#rconn:1</P>
+    <P Name="Dst">215#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">217#out:1</P>
+    <P Name="Points">[-34, 0; 0, 15]</P>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Points">[0, 100]</P>
+      <P Name="Dst">213#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Dst">214#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">5</P>
+    <P Name="Src">221#rconn:1</P>
+    <P Name="Dst">213#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">6</P>
+    <P Name="Src">214#rconn:1</P>
+    <P Name="Dst">220#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">212#out:1</P>
+    <P Name="Points">[-155, 0; 0, 60]</P>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Points">[0, 85]</P>
+      <Branch>
+        <P Name="ZOrder">9</P>
+        <P Name="Points">[0, 85]</P>
+        <P Name="Dst">217#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">10</P>
+        <P Name="Dst">215#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Dst">216#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">12</P>
+    <P Name="Src">213#lconn:1</P>
+    <P Name="Points">[254, 0; 0, -200]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">215#lconn:1</P>
+    </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">223#rconn:1</P>
+      <P Name="Points">[-41, 0]</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">15</P>
+    <P Name="Src">218#rconn:1</P>
+    <P Name="Dst">216#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">16</P>
+    <P Name="Src">214#lconn:1</P>
+    <P Name="Points">[208, 0; 0, -185]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">216#lconn:1</P>
+    </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">222#rconn:1</P>
+      <P Name="Points">[-87, 0]</P>
+    </Branch>
+  </Line>
+</System>

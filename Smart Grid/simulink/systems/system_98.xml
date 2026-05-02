@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[8, 8, 1558, 846]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="Open">on</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">156</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="SubSystem" Name="Controller" SID="95">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[1120, 350, 1310, 585]</P>
+    <P Name="ZOrder">61212</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_95"/>
+  </Block>
+  <Block BlockType="From" Name="From2" SID="36">
+    <P Name="Position">[145, 31, 185, 59]</P>
+    <P Name="ZOrder">28002</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="GotoTag">ref</P>
+  </Block>
+  <Block BlockType="Reference" Name="PWM Generator&#xA;" SID="34">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[255, 23, 310, 67]</P>
+    <P Name="ZOrder">28000</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="FontName">Arial</P>
+    <P Name="SourceBlock">spsPWMGenerator2LevelLib/PWM Generator
+(2-Level)</P>
+    <P Name="SourceType">PWM Generator (2-Level)</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="ModulatorType">Three-phase bridge (6 pulses)</P>
+      <P Name="ModulatorMode">Unsynchronized</P>
+      <P Name="Fc">27*60</P>
+      <P Name="Pc">90</P>
+      <P Name="nF">27</P>
+      <P Name="MinMax">[ -1  1 ]</P>
+      <P Name="SamplingTechnique">Natural</P>
+      <P Name="ModulatingSignals">off</P>
+      <P Name="m">0.8</P>
+      <P Name="Freq">60</P>
+      <P Name="Phase">0</P>
+      <P Name="Ts">0</P>
+      <P Name="ShowCarrierOutport">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Prallel Connection Control" SID="14">
+    <P Name="Position">[870, 75, 900, 105]</P>
+    <P Name="ZOrder">27980</P>
+    <P Name="HideAutomaticName">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Three-Phase&#xA;Series RLC Branch" SID="5">
+    <P Name="Ports">[0, 0, 0, 0, 0, 3, 3]</P>
+    <P Name="Position">[390, 187, 485, 233]</P>
+    <P Name="ZOrder">5902</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="AttributesFormatString">\n</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsThreePhaseSeriesRLCBranchLib/Three-Phase
+Series RLC Branch</P>
+    <P Name="SourceType">Three-Phase Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">A|B|C</P>
+      <P Name="RConnTagsString">A|B|C</P>
+      <P Name="BranchType">RL</P>
+      <P Name="Resistance">1</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="Capacitance">1e-6</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Three-Phase&#xA;Series RLC Load" SID="9">
+    <P Name="Ports">[0, 0, 0, 0, 0, 3]</P>
+    <P Name="Position">[522, 330, 578, 395]</P>
+    <P Name="ZOrder">5906</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="AttributesFormatString">\n</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsThreePhaseSeriesRLCLoadLib/Three-Phase
+Series RLC Load</P>
+    <P Name="SourceType">Three-Phase Series RLC Load</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">A|B|C</P>
+      <P Name="Configuration">Delta</P>
+      <P Name="NominalVoltage">1000</P>
+      <P Name="Vabc">[1e3 1e3 1e3]</P>
+      <P Name="Vabcp">[1e3 1e3 1e3]</P>
+      <P Name="NominalFrequency">60</P>
+      <P Name="UnbalancedPower">off</P>
+      <P Name="ActivePower">10e3</P>
+      <P Name="InductivePower">0</P>
+      <P Name="CapacitivePower">100</P>
+      <P Name="Pabc">[10e3 9e3 11e3]</P>
+      <P Name="QLabc">[100 90 110]</P>
+      <P Name="QCabc">[100 90 110]</P>
+      <P Name="Pabcp">[10e3 9e3 11e3]</P>
+      <P Name="QLabcp">[100 90 110]</P>
+      <P Name="QCabcp">[100 90 110]</P>
+      <P Name="Measurements">None</P>
+      <P Name="LoadType">constant Z</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Three-Phase&#xA;V-I Measurement" SID="7">
+    <P Name="Ports">[0, 0, 0, 0, 0, 3, 3]</P>
+    <P Name="Position">[750, 172, 800, 248]</P>
+    <P Name="ZOrder">5904</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsThreePhaseVIMeasurementLib/Three-Phase
+V-I Measurement</P>
+    <P Name="SourceType">Three-Phase VI Measurement</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="VoltageMeasurement">phase-to-phase</P>
+      <P Name="SetLabelV">on</P>
+      <P Name="LabelV">Vabc_inv</P>
+      <P Name="Vpu">off</P>
+      <P Name="VpuLL">off</P>
+      <P Name="CurrentMeasurement">yes</P>
+      <P Name="SetLabelI">on</P>
+      <P Name="LabelI">Iabc_inv</P>
+      <P Name="Ipu">off</P>
+      <P Name="Pbase">100e6</P>
+      <P Name="Vbase">500e3</P>
+      <P Name="OutputType">Complex</P>
+      <P Name="PhasorSimulation">off</P>
+      <P Name="PSBequivalent">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Three-Phase Breaker" SID="11">
+    <P Name="Ports">[1, 0, 0, 0, 0, 3, 3]</P>
+    <P Name="Position">[940, 169, 1020, 236]</P>
+    <P Name="ZOrder">5908</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsThreePhaseBreakerLib/Three-Phase Breaker</P>
+    <P Name="SourceType">Three-Phase Breaker</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="InitialState">open</P>
+      <P Name="SwitchA">on</P>
+      <P Name="SwitchB">on</P>
+      <P Name="SwitchC">on</P>
+      <P Name="SwitchTimes">[1/60  5/60]</P>
+      <P Name="External">on</P>
+      <P Name="BreakerResistance">0.01</P>
+      <P Name="SnubberResistance">1e6</P>
+      <P Name="SnubberCapacitance">inf</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Universal Bridge" SID="35">
+    <P Name="Ports">[1, 0, 0, 0, 0, 3, 2]</P>
+    <P Name="Position">[145, 124, 235, 261]</P>
+    <P Name="ZOrder">28001</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsUniversalBridgeLib/Universal Bridge</P>
+    <P Name="SourceType">Universal Bridge</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Arms">3</P>
+      <P Name="SnubberResistance">1e5</P>
+      <P Name="SnubberCapacitance">inf</P>
+      <P Name="Device">IGBT / Diodes</P>
+      <P Name="Ron">1e-3</P>
+      <P Name="Lon">0</P>
+      <P Name="ForwardVoltages">[  0  0  ]</P>
+      <P Name="ForwardVoltage">0</P>
+      <P Name="GTOparameters">[ 10e-6 , 20e-6 ]</P>
+      <P Name="IGBTparameters">[ 1e-6 , 2e-6 ]</P>
+      <P Name="Measurements">None</P>
+      <P Name="Measurements_2">None</P>
+      <P Name="converterType">Rectifier</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Universal Bridge1" SID="2">
+    <P Name="Ports">[0, 0, 0, 0, 0, 3, 2]</P>
+    <P Name="Position">[375, 476, 465, 614]</P>
+    <P Name="ZOrder">5899</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsUniversalBridgeLib/Universal Bridge</P>
+    <P Name="SourceType">Universal Bridge</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Arms">3</P>
+      <P Name="SnubberResistance">1e5</P>
+      <P Name="SnubberCapacitance">inf</P>
+      <P Name="Device">Diodes</P>
+      <P Name="Ron">1e-3</P>
+      <P Name="Lon">0</P>
+      <P Name="ForwardVoltages">[  0  0  ]</P>
+      <P Name="ForwardVoltage">0</P>
+      <P Name="GTOparameters">[ 10e-6 , 20e-6 ]</P>
+      <P Name="IGBTparameters">[ 1e-6 , 2e-6 ]</P>
+      <P Name="Measurements">None</P>
+      <P Name="Measurements_2">None</P>
+      <P Name="converterType">Rectifier</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge_R" SID="101">
+    <P Name="Position">[1160, 133, 1190, 147]</P>
+    <P Name="ZOrder">61215</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge_Y" SID="102">
+    <P Name="Position">[1160, 198, 1190, 212]</P>
+    <P Name="ZOrder">61216</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge_B" SID="103">
+    <P Name="Position">[1160, 273, 1190, 287]</P>
+    <P Name="ZOrder">61217</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_R" SID="106">
+    <P Name="Position">[230, 493, 260, 507]</P>
+    <P Name="ZOrder">61220</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Port">4</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_Y" SID="107">
+    <P Name="Position">[230, 538, 260, 552]</P>
+    <P Name="ZOrder">61221</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Port">5</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_B" SID="108">
+    <P Name="Position">[230, 583, 260, 597]</P>
+    <P Name="ZOrder">61222</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Port">6</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge +" SID="104">
+    <P Name="Position">[20, 153, 50, 167]</P>
+    <P Name="ZOrder">61218</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Port">7</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="discharge -" SID="105">
+    <P Name="Position">[20, 223, 50, 237]</P>
+    <P Name="ZOrder">61219</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Port">8</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge -" SID="110">
+    <P Name="Position">[550, 573, 580, 587]</P>
+    <P Name="ZOrder">61224</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="Port">9</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge +" SID="109">
+    <P Name="Position">[550, 503, 580, 517]</P>
+    <P Name="ZOrder">61223</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="Port">10</P>
+    <P Name="Side">Right</P>
+  </Block>
+  <Line LineType="Connection">
+    <P Name="ZOrder">9</P>
+    <P Name="Src">5#rconn:1</P>
+    <P Name="Points">[30, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">9#lconn:1</P>
+      <P Name="Points">[0, -120]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[0, -10]</P>
+      <P Name="Dst">7#lconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">122</P>
+    <P Name="Src">107#rconn:1</P>
+    <P Name="Dst">2#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">120</P>
+    <P Name="Src">35#rconn:2</P>
+    <P Name="Dst">105#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">118</P>
+    <P Name="Src">11#rconn:3</P>
+    <P Name="Points">[55, 0; 0, 55]</P>
+    <P Name="Dst">103#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">123</P>
+    <P Name="Src">108#rconn:1</P>
+    <P Name="Dst">2#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">15</P>
+    <P Name="Src">5#rconn:3</P>
+    <P Name="Points">[70, 0; 0, 10]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">9#lconn:3</P>
+      <P Name="Points">[0, -80]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">7#lconn:3</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">121</P>
+    <P Name="Src">106#rconn:1</P>
+    <P Name="Dst">2#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">2</P>
+    <P Name="Src">5#rconn:2</P>
+    <P Name="Points">[50, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">9#lconn:2</P>
+      <P Name="Points">[0, -105]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">7#lconn:2</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3</P>
+    <P Name="Src">7#rconn:2</P>
+    <P Name="Dst">11#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">51</P>
+    <P Name="Src">35#lconn:2</P>
+    <P Name="Dst">5#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">17</P>
+    <P Name="Src">7#rconn:3</P>
+    <P Name="Points">[55, 0; 0, -10]</P>
+    <P Name="Dst">11#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">16</P>
+    <P Name="Src">7#rconn:1</P>
+    <P Name="Points">[55, 0; 0, 10]</P>
+    <P Name="Dst">11#lconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">34#out:1</P>
+    <P Name="Points">[19, 0; 0, 95]</P>
+    <P Name="Dst">35#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">125</P>
+    <P Name="Src">2#rconn:2</P>
+    <P Name="Dst">110#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Points">[59, 0; 0, 53; -48, 0; 0, 37]</P>
+    <P Name="Dst">11#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">124</P>
+    <P Name="Src">2#rconn:1</P>
+    <P Name="Dst">109#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">49</P>
+    <P Name="Src">35#lconn:1</P>
+    <P Name="Points">[63, 0; 0, 20]</P>
+    <P Name="Dst">5#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">119</P>
+    <P Name="Src">35#rconn:1</P>
+    <P Name="Dst">104#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">52</P>
+    <P Name="Src">35#lconn:3</P>
+    <P Name="Points">[63, 0; 0, -20]</P>
+    <P Name="Dst">5#lconn:3</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">117</P>
+    <P Name="Src">11#rconn:2</P>
+    <P Name="Dst">102#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">116</P>
+    <P Name="Src">11#rconn:1</P>
+    <P Name="Points">[55, 0; 0, -45]</P>
+    <P Name="Dst">101#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">36#out:1</P>
+    <P Name="Dst">34#in:1</P>
+  </Line>
+</System>

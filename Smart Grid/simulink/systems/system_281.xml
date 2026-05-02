@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-7, -7, 1543, 831]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">30</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="SubSystem" Name="Battery Controller" SID="282">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[897, 71, 1142, 341]</P>
+    <P Name="ZOrder">6123</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_282"/>
+  </Block>
+  <Block BlockType="Constant" Name="Constant3" SID="313">
+    <P Name="Position">[1320, 1130, 1350, 1160]</P>
+    <P Name="ZOrder">6149</P>
+    <P Name="Value">253</P>
+  </Block>
+  <Block BlockType="Reference" Name="Current Controlled" SID="314">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1485, 719, 1550, 831]</P>
+    <P Name="ZOrder">6145</P>
+    <P Name="LibraryVersion">2.31</P>
+    <P Name="SourceBlock">pid_lib/PID Controller</P>
+    <P Name="SourceType">PID 1dof</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Controller">PI</P>
+      <P Name="Form">Parallel</P>
+      <P Name="TimeDomain">Discrete-time</P>
+      <P Name="UseExternalTs">off</P>
+      <P Name="SampleTime">500e-6</P>
+      <P Name="IntegratorMethod">Forward Euler</P>
+      <P Name="FilterMethod">Forward Euler</P>
+      <P Name="ControllerParametersSource">internal</P>
+      <P Name="P">0.005</P>
+      <P Name="I">10</P>
+      <P Name="D">0</P>
+      <P Name="UseFilter">on</P>
+      <P Name="N">100</P>
+      <P Name="TunerSelectOption">Transfer Function Based (PID Tuner App)</P>
+      <P Name="ZeroCross">on</P>
+      <P Name="InitialConditionSource">internal</P>
+      <P Name="InitialConditionForIntegrator">0.54</P>
+      <P Name="InitialConditionForFilter">0</P>
+      <P Name="DifferentiatorICPrevScaledInput">0</P>
+      <P Name="ExternalReset">none</P>
+      <P Name="IgnoreLimit">off</P>
+      <P Name="TrackingMode">off</P>
+      <P Name="Kt">1</P>
+      <P Name="LimitOutput">on</P>
+      <P Name="SatLimitsSource">internal</P>
+      <P Name="UpperSaturationLimit">0.95</P>
+      <P Name="LowerSaturationLimit">0</P>
+      <P Name="LinearizeAsGain">off</P>
+      <P Name="AntiWindupMode">none</P>
+      <P Name="Kb">1</P>
+      <P Name="RndMeth">Floor</P>
+      <P Name="SaturateOnIntegerOverflow">off</P>
+      <P Name="LockScale">off</P>
+      <P Name="PGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="POutMin">[]</P>
+      <P Name="POutMax">[]</P>
+      <P Name="IGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IOutMin">[]</P>
+      <P Name="IOutMax">[]</P>
+      <P Name="DGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DOutMin">[]</P>
+      <P Name="DOutMax">[]</P>
+      <P Name="NGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NOutMin">[]</P>
+      <P Name="NOutMax">[]</P>
+      <P Name="SumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumOutMin">[]</P>
+      <P Name="SumOutMax">[]</P>
+      <P Name="SaturationOutDataTypeStr">Inherit: Same as input</P>
+      <P Name="SaturationOutMin">[]</P>
+      <P Name="SaturationOutMax">[]</P>
+      <P Name="PParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PParamMin">[]</P>
+      <P Name="PParamMax">[]</P>
+      <P Name="IParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IParamMin">[]</P>
+      <P Name="IParamMax">[]</P>
+      <P Name="DParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DParamMin">[]</P>
+      <P Name="DParamMax">[]</P>
+      <P Name="NParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NParamMin">[]</P>
+      <P Name="NParamMax">[]</P>
+      <P Name="KbParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbParamMin">[]</P>
+      <P Name="KbParamMax">[]</P>
+      <P Name="KtParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtParamMin">[]</P>
+      <P Name="KtParamMax">[]</P>
+      <P Name="KbOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbOutMin">[]</P>
+      <P Name="KbOutMax">[]</P>
+      <P Name="KtOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtOutMin">[]</P>
+      <P Name="KtOutMax">[]</P>
+      <P Name="IntegratorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IntegratorOutMin">[]</P>
+      <P Name="IntegratorOutMax">[]</P>
+      <P Name="FilterOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterOutMin">[]</P>
+      <P Name="FilterOutMax">[]</P>
+      <P Name="SumI1OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1OutMin">[]</P>
+      <P Name="SumI1OutMax">[]</P>
+      <P Name="SumI2OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2OutMin">[]</P>
+      <P Name="SumI2OutMax">[]</P>
+      <P Name="SumI3OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3OutMin">[]</P>
+      <P Name="SumI3OutMax">[]</P>
+      <P Name="SumI4OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4OutMin">[]</P>
+      <P Name="SumI4OutMax">[]</P>
+      <P Name="SumDOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDOutMin">[]</P>
+      <P Name="SumDOutMax">[]</P>
+      <P Name="SumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutMin">[]</P>
+      <P Name="DifferentiatorOutMax">[]</P>
+      <P Name="FilterDiffNumProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefMin">[]</P>
+      <P Name="FilterDiffOutCoefMax">[]</P>
+      <P Name="ReciprocalOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="ReciprocalOutMin">[]</P>
+      <P Name="ReciprocalOutMax">[]</P>
+      <P Name="SumDenOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDenOutMin">[]</P>
+      <P Name="SumDenOutMax">[]</P>
+      <P Name="SumNumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumOutMin">[]</P>
+      <P Name="SumNumOutMax">[]</P>
+      <P Name="SumDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutMin">[]</P>
+      <P Name="DivideOutMax">[]</P>
+      <P Name="UdiffTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UdiffTsProdOutMin">[]</P>
+      <P Name="UdiffTsProdOutMax">[]</P>
+      <P Name="NTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NTsProdOutMin">[]</P>
+      <P Name="NTsProdOutMax">[]</P>
+      <P Name="UintegralTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UintegralTsProdOutMin">[]</P>
+      <P Name="UintegralTsProdOutMax">[]</P>
+      <P Name="UngainTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UngainTsProdOutMin">[]</P>
+      <P Name="UngainTsProdOutMax">[]</P>
+      <P Name="IntegratorContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="IntegratorStateMustResolveToSignalObject">off</P>
+      <P Name="IntegratorRTWStateStorageClass">Auto</P>
+      <P Name="FilterContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="FilterStateMustResolveToSignalObject">off</P>
+      <P Name="FilterRTWStateStorageClass">Auto</P>
+      <P Name="ParallelPVariant">InternalParameters</P>
+      <P Name="IdealPVariant">Disabled</P>
+      <P Name="IVariant">InternalParameters</P>
+      <P Name="DVariant">Disabled</P>
+      <P Name="IntegratorVariant">Discrete</P>
+      <P Name="SatVariant">Enabled</P>
+      <P Name="AWVariant">Passthrough</P>
+      <P Name="PCopyVariant">Disabled</P>
+      <P Name="TRVariant">Disabled</P>
+      <P Name="FdbkBlocksVariant">Forward</P>
+      <P Name="IdealPFdbkVariant">Disabled</P>
+      <P Name="SatFdbkVariant">Disabled</P>
+      <P Name="DerivativeFilterVariant">Disabled</P>
+      <P Name="NVariant">Disabled</P>
+      <P Name="NCopyVariant">Disabled_SignalSpec</P>
+      <P Name="FilterICVariant">Disabled</P>
+      <P Name="IntegratorICVariant">InternalICs</P>
+      <P Name="ExternalResetVariant">Disabled</P>
+      <P Name="TRSumVariant">Passthrough</P>
+      <P Name="SumFdbkVariant">Disabled</P>
+      <P Name="SumVariant">Sum_PI</P>
+      <P Name="TsampFilterVariant">InternalTs</P>
+      <P Name="TsampNgainVariant">Passthrough</P>
+      <P Name="TsampIntegralVariant">Passthrough</P>
+      <P Name="ExternalSaturationOutDataTypeStr">Inherit: Same as second input</P>
+      <P Name="InitialConditionSetting">Auto</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Display" Name="Display2" SID="315">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1735, 1120, 1825, 1150]</P>
+    <P Name="ZOrder">6152</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="From" Name="From" SID="316">
+    <P Name="Position">[1310, 726, 1350, 754]</P>
+    <P Name="ZOrder">6141</P>
+    <P Name="GotoTag">lb</P>
+  </Block>
+  <Block BlockType="From" Name="From1" SID="317">
+    <P Name="Position">[450, 66, 490, 94]</P>
+    <P Name="ZOrder">6069</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S_P</P>
+  </Block>
+  <Block BlockType="From" Name="From2" SID="318">
+    <P Name="Position">[450, 221, 490, 249]</P>
+    <P Name="ZOrder">6070</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S_N</P>
+  </Block>
+  <Block BlockType="From" Name="From3" SID="319">
+    <P Name="Position">[460, 586, 525, 614]</P>
+    <P Name="ZOrder">6130</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S_P1</P>
+  </Block>
+  <Block BlockType="From" Name="From4" SID="320">
+    <P Name="Position">[470, 855, 530, 885]</P>
+    <P Name="ZOrder">6131</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S_N1</P>
+  </Block>
+  <Block BlockType="From" Name="From5" SID="321">
+    <P Name="Position">[1320, 1210, 1360, 1240]</P>
+    <P Name="ZOrder">6150</P>
+    <P Name="GotoTag">Vb</P>
+  </Block>
+  <Block BlockType="From" Name="From6" SID="322">
+    <P Name="Position">[1295, 796, 1350, 824]</P>
+    <P Name="ZOrder">6142</P>
+    <P Name="GotoTag">lb_ref1</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="323">
+    <P Name="Position">[1645, 1170, 1675, 1200]</P>
+    <P Name="ZOrder">6154</P>
+    <P Name="Gain">-1</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto" SID="324">
+    <P Name="Position">[1895, 760, 1950, 790]</P>
+    <P Name="ZOrder">6146</P>
+    <P Name="GotoTag">S_P1</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto1" SID="325">
+    <P Name="Position">[715, 196, 765, 224]</P>
+    <P Name="ZOrder">6075</P>
+    <P Name="GotoTag">Vload</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto3" SID="326">
+    <P Name="Position">[1735, 1170, 1840, 1200]</P>
+    <P Name="ZOrder">6153</P>
+    <P Name="GotoTag">lb_ref1</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto4" SID="327">
+    <P Name="Position">[1895, 865, 1950, 895]</P>
+    <P Name="ZOrder">6147</P>
+    <P Name="GotoTag">S_N1</P>
+  </Block>
+  <Block BlockType="Logic" Name="Logical&#xA;Operator" SID="328">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1780, 864, 1810, 896]</P>
+    <P Name="ZOrder">6156</P>
+    <P Name="Operator">NOT</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet1" SID="329">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[368, 100, 412, 160]</P>
+    <P Name="ZOrder">6067</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet2" SID="330">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[378, 255, 422, 315]</P>
+    <P Name="ZOrder">6068</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet3" SID="331">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[388, 630, 432, 690]</P>
+    <P Name="ZOrder">6128</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet4" SID="332">
+    <P Name="Ports">[1, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[398, 885, 442, 945]</P>
+    <P Name="ZOrder">6129</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="PWM Generator&#xA;(DC-DC)" SID="333">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1615, 753, 1670, 797]</P>
+    <P Name="ZOrder">6144</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsPWMGeneratorDCDCLib/PWM Generator
+(DC-DC)</P>
+    <P Name="SourceType">PWM Generator (DC-DC)</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Fsw">10e3</P>
+      <P Name="Ts">5e-6</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch1" SID="334">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[156, 245, 194, 325]</P>
+    <P Name="ZOrder">6066</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">R</P>
+      <P Name="Resistance">10</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch2" SID="335">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[225, 196, 305, 234]</P>
+    <P Name="ZOrder">6055</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">RL</P>
+      <P Name="Resistance">0.05</P>
+      <P Name="Inductance">5.76e-4</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch3" SID="336">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[156, 760, 194, 840]</P>
+    <P Name="ZOrder">6140</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">RC</P>
+      <P Name="Resistance">0.001</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch4" SID="337">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[485, 751, 565, 789]</P>
+    <P Name="ZOrder">6137</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">RL</P>
+      <P Name="Resistance">0.05</P>
+      <P Name="Inductance">5.76e-4</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch5" SID="338">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[526, 170, 564, 250]</P>
+    <P Name="ZOrder">6073</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">RC</P>
+      <P Name="Resistance">0.001</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch6" SID="339">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[716, 855, 754, 935]</P>
+    <P Name="ZOrder">6134</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">RC</P>
+      <P Name="Resistance">1e-3</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">5600e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Series RLC Branch7" SID="340">
+    <P Name="Ports">[0, 0, 0, 0, 0, 1, 1]</P>
+    <P Name="Position">[615, 751, 695, 789]</P>
+    <P Name="ZOrder">6138</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="SourceBlock">spsSeriesRLCBranchLib/Series RLC Branch</P>
+    <P Name="SourceType">Series RLC Branch</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="LConnTagsString">__new0</P>
+      <P Name="RConnTagsString">__new0</P>
+      <P Name="BranchType">R</P>
+      <P Name="Resistance">10</P>
+      <P Name="Inductance">1e-3</P>
+      <P Name="SetiL0">off</P>
+      <P Name="InitialCurrent">0</P>
+      <P Name="Capacitance">1000e-6</P>
+      <P Name="Setx0">off</P>
+      <P Name="InitialVoltage">0</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Sum" Name="Subtract3" SID="341">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1405, 1167, 1435, 1198]</P>
+    <P Name="ZOrder">6151</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Subtract4" SID="342">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1405, 757, 1435, 788]</P>
+    <P Name="ZOrder">6143</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Reference" Name="Voltage Controlled" SID="343">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1515, 1129, 1580, 1241]</P>
+    <P Name="ZOrder">6155</P>
+    <P Name="LibraryVersion">2.31</P>
+    <P Name="SourceBlock">pid_lib/PID Controller</P>
+    <P Name="SourceType">PID 1dof</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Controller">PI</P>
+      <P Name="Form">Parallel</P>
+      <P Name="TimeDomain">Discrete-time</P>
+      <P Name="UseExternalTs">off</P>
+      <P Name="SampleTime">500e-6</P>
+      <P Name="IntegratorMethod">Forward Euler</P>
+      <P Name="FilterMethod">Forward Euler</P>
+      <P Name="ControllerParametersSource">internal</P>
+      <P Name="P">40</P>
+      <P Name="I">2000</P>
+      <P Name="D">0</P>
+      <P Name="UseFilter">on</P>
+      <P Name="N">100</P>
+      <P Name="TunerSelectOption">Transfer Function Based (PID Tuner App)</P>
+      <P Name="ZeroCross">on</P>
+      <P Name="InitialConditionSource">internal</P>
+      <P Name="InitialConditionForIntegrator">0</P>
+      <P Name="InitialConditionForFilter">0</P>
+      <P Name="DifferentiatorICPrevScaledInput">0</P>
+      <P Name="ExternalReset">none</P>
+      <P Name="IgnoreLimit">off</P>
+      <P Name="TrackingMode">off</P>
+      <P Name="Kt">1</P>
+      <P Name="LimitOutput">on</P>
+      <P Name="SatLimitsSource">internal</P>
+      <P Name="UpperSaturationLimit">22</P>
+      <P Name="LowerSaturationLimit">0</P>
+      <P Name="LinearizeAsGain">off</P>
+      <P Name="AntiWindupMode">none</P>
+      <P Name="Kb">1</P>
+      <P Name="RndMeth">Floor</P>
+      <P Name="SaturateOnIntegerOverflow">off</P>
+      <P Name="LockScale">off</P>
+      <P Name="PGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="POutMin">[]</P>
+      <P Name="POutMax">[]</P>
+      <P Name="IGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IOutMin">[]</P>
+      <P Name="IOutMax">[]</P>
+      <P Name="DGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DOutMin">[]</P>
+      <P Name="DOutMax">[]</P>
+      <P Name="NGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NOutMin">[]</P>
+      <P Name="NOutMax">[]</P>
+      <P Name="SumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumOutMin">[]</P>
+      <P Name="SumOutMax">[]</P>
+      <P Name="SaturationOutDataTypeStr">Inherit: Same as input</P>
+      <P Name="SaturationOutMin">[]</P>
+      <P Name="SaturationOutMax">[]</P>
+      <P Name="PParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PParamMin">[]</P>
+      <P Name="PParamMax">[]</P>
+      <P Name="IParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IParamMin">[]</P>
+      <P Name="IParamMax">[]</P>
+      <P Name="DParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DParamMin">[]</P>
+      <P Name="DParamMax">[]</P>
+      <P Name="NParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NParamMin">[]</P>
+      <P Name="NParamMax">[]</P>
+      <P Name="KbParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbParamMin">[]</P>
+      <P Name="KbParamMax">[]</P>
+      <P Name="KtParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtParamMin">[]</P>
+      <P Name="KtParamMax">[]</P>
+      <P Name="KbOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbOutMin">[]</P>
+      <P Name="KbOutMax">[]</P>
+      <P Name="KtOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtOutMin">[]</P>
+      <P Name="KtOutMax">[]</P>
+      <P Name="IntegratorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IntegratorOutMin">[]</P>
+      <P Name="IntegratorOutMax">[]</P>
+      <P Name="FilterOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterOutMin">[]</P>
+      <P Name="FilterOutMax">[]</P>
+      <P Name="SumI1OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1OutMin">[]</P>
+      <P Name="SumI1OutMax">[]</P>
+      <P Name="SumI2OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2OutMin">[]</P>
+      <P Name="SumI2OutMax">[]</P>
+      <P Name="SumI3OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3OutMin">[]</P>
+      <P Name="SumI3OutMax">[]</P>
+      <P Name="SumI4OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4OutMin">[]</P>
+      <P Name="SumI4OutMax">[]</P>
+      <P Name="SumDOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDOutMin">[]</P>
+      <P Name="SumDOutMax">[]</P>
+      <P Name="SumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutMin">[]</P>
+      <P Name="DifferentiatorOutMax">[]</P>
+      <P Name="FilterDiffNumProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefMin">[]</P>
+      <P Name="FilterDiffOutCoefMax">[]</P>
+      <P Name="ReciprocalOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="ReciprocalOutMin">[]</P>
+      <P Name="ReciprocalOutMax">[]</P>
+      <P Name="SumDenOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDenOutMin">[]</P>
+      <P Name="SumDenOutMax">[]</P>
+      <P Name="SumNumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumOutMin">[]</P>
+      <P Name="SumNumOutMax">[]</P>
+      <P Name="SumDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutMin">[]</P>
+      <P Name="DivideOutMax">[]</P>
+      <P Name="UdiffTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UdiffTsProdOutMin">[]</P>
+      <P Name="UdiffTsProdOutMax">[]</P>
+      <P Name="NTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NTsProdOutMin">[]</P>
+      <P Name="NTsProdOutMax">[]</P>
+      <P Name="UintegralTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UintegralTsProdOutMin">[]</P>
+      <P Name="UintegralTsProdOutMax">[]</P>
+      <P Name="UngainTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UngainTsProdOutMin">[]</P>
+      <P Name="UngainTsProdOutMax">[]</P>
+      <P Name="IntegratorContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="IntegratorStateMustResolveToSignalObject">off</P>
+      <P Name="IntegratorRTWStateStorageClass">Auto</P>
+      <P Name="FilterContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="FilterStateMustResolveToSignalObject">off</P>
+      <P Name="FilterRTWStateStorageClass">Auto</P>
+      <P Name="ParallelPVariant">InternalParameters</P>
+      <P Name="IdealPVariant">Disabled</P>
+      <P Name="IVariant">InternalParameters</P>
+      <P Name="DVariant">Disabled</P>
+      <P Name="IntegratorVariant">Discrete</P>
+      <P Name="SatVariant">Enabled</P>
+      <P Name="AWVariant">Passthrough</P>
+      <P Name="PCopyVariant">Disabled</P>
+      <P Name="TRVariant">Disabled</P>
+      <P Name="FdbkBlocksVariant">Forward</P>
+      <P Name="IdealPFdbkVariant">Disabled</P>
+      <P Name="SatFdbkVariant">Disabled</P>
+      <P Name="DerivativeFilterVariant">Disabled</P>
+      <P Name="NVariant">Disabled</P>
+      <P Name="NCopyVariant">Disabled_SignalSpec</P>
+      <P Name="FilterICVariant">Disabled</P>
+      <P Name="IntegratorICVariant">InternalICs</P>
+      <P Name="ExternalResetVariant">Disabled</P>
+      <P Name="TRSumVariant">Passthrough</P>
+      <P Name="SumFdbkVariant">Disabled</P>
+      <P Name="SumVariant">Sum_PI</P>
+      <P Name="TsampFilterVariant">InternalTs</P>
+      <P Name="TsampNgainVariant">Passthrough</P>
+      <P Name="TsampIntegralVariant">Passthrough</P>
+      <P Name="ExternalSaturationOutDataTypeStr">Inherit: Same as second input</P>
+      <P Name="InitialConditionSetting">Auto</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Voltage Measurement2" SID="344">
+    <P Name="Ports">[0, 1, 0, 0, 0, 2]</P>
+    <P Name="Position">[640, 198, 665, 222]</P>
+    <P Name="ZOrder">6074</P>
+    <P Name="LibraryVersion">1.1</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="SourceBlock">spsVoltageMeasurementLib/Voltage Measurement</P>
+    <P Name="SourceType">Voltage Measurement</P>
+    <P Name="SourceProductBaseCode">PS</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PhasorSimulation">off</P>
+      <P Name="OutputType">Complex</P>
+      <P Name="PSBequivalent">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_out +" SID="345">
+    <P Name="Position">[685, 23, 715, 37]</P>
+    <P Name="ZOrder">6158</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_out -" SID="346">
+    <P Name="Position">[685, 358, 715, 372]</P>
+    <P Name="ZOrder">6159</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">2</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_in +" SID="347">
+    <P Name="Position">[20, 208, 50, 222]</P>
+    <P Name="ZOrder">6160</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">3</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="disch_in -" SID="348">
+    <P Name="Position">[20, 358, 50, 372]</P>
+    <P Name="ZOrder">6161</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">4</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_out +" SID="349">
+    <P Name="Position">[860, 763, 890, 777]</P>
+    <P Name="ZOrder">6162</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">5</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Charge_in +" SID="350">
+    <P Name="Position">[40, 593, 70, 607]</P>
+    <P Name="ZOrder">6163</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">6</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="charge_out -" SID="351">
+    <P Name="Position">[860, 988, 890, 1002]</P>
+    <P Name="ZOrder">6164</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">7</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Block BlockType="PMIOPort" Name="Charge_in -" SID="352">
+    <P Name="Position">[40, 988, 70, 1002]</P>
+    <P Name="ZOrder">6165</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Port">8</P>
+    <P Name="Side">Left</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">323#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <Branch>
+      <P Name="ZOrder">2</P>
+      <P Name="Points">[0, -50]</P>
+      <P Name="Dst">315#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Dst">326#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">4</P>
+    <P Name="Src">336#rconn:1</P>
+    <P Name="Points">[0, 140]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Points">[420, 995; -245, 0]</P>
+      <Branch ConnectType="SRC_SRC">
+        <P Name="Dst">332#rconn:1</P>
+      </Branch>
+      <Branch ConnectType="SRC_SRC">
+        <P Name="Points">[315, 0]</P>
+        <Branch ConnectType="DEST_SRC">
+          <P Name="Dst">351#rconn:1</P>
+        </Branch>
+        <Branch ConnectType="DEST_DEST">
+          <P Name="Src">339#rconn:1</P>
+          <P Name="Points">[0, 45]</P>
+        </Branch>
+      </Branch>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">352#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">322#out:1</P>
+    <P Name="Points">[20, 0; 0, -30]</P>
+    <P Name="Dst">342#in:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">12</P>
+    <P Name="Points">[175, 215; 35, 0]</P>
+    <P Name="Dst">335#lconn:1</P>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">334#lconn:1</P>
+      <P Name="Points">[0, -15]</P>
+    </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">347#rconn:1</P>
+      <P Name="Points">[110, 0]</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">333#out:1</P>
+    <P Name="Points">[48, 0]</P>
+    <Branch>
+      <P Name="ZOrder">16</P>
+      <P Name="Points">[0, 105]</P>
+      <P Name="Dst">328#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">17</P>
+      <P Name="Dst">324#in:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">18</P>
+    <P Name="Src">334#rconn:1</P>
+    <P Name="Points">[0, 25]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[225, 0]</P>
+      <Branch ConnectType="DEST_SRC">
+        <P Name="Dst">330#rconn:1</P>
+      </Branch>
+      <Branch ConnectType="DEST_SRC">
+        <P Name="Points">[145, 0]</P>
+        <Branch ConnectType="DEST_SRC">
+          <P Name="Points">[61, 0]</P>
+          <Branch ConnectType="DEST_SRC">
+            <P Name="Dst">346#rconn:1</P>
+          </Branch>
+          <Branch ConnectType="DEST_DEST">
+            <P Name="Src">344#lconn:2</P>
+            <P Name="Points">[-19, 0; 0, 150]</P>
+          </Branch>
+        </Branch>
+        <Branch ConnectType="DEST_SRC">
+          <P Name="Dst">338#rconn:1</P>
+        </Branch>
+      </Branch>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">348#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">27</P>
+    <P Name="Src">329#lconn:1</P>
+    <P Name="Points">[0, -55; 165, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">338#lconn:1</P>
+      <P Name="Points">[0, -125]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[62, 0]</P>
+      <Branch ConnectType="DEST_DEST">
+        <P Name="Src">344#lconn:1</P>
+        <P Name="Points">[-18, 0; 0, -175]</P>
+      </Branch>
+      <Branch ConnectType="DEST_SRC">
+        <P Name="Dst">345#rconn:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">32</P>
+    <P Name="Src">336#lconn:1</P>
+    <P Name="Points">[0, -145]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[225, 0]</P>
+      <P Name="Dst">331#lconn:1</P>
+    </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">350#rconn:1</P>
+      <P Name="Points">[90, 0]</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">35</P>
+    <P Name="Src">339#lconn:1</P>
+    <P Name="Points">[0, -70]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">340#rconn:1</P>
+      <P Name="Points">[25, 0]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">349#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">38</P>
+    <P Name="Src">314#out:1</P>
+    <P Name="Dst">333#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">39</P>
+    <P Name="Src">318#out:1</P>
+    <P Name="Points">[-35, 0]</P>
+    <P Name="Dst">330#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">40</P>
+    <P Name="Src">343#out:1</P>
+    <P Name="Dst">323#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">41</P>
+    <P Name="Points">[410, 770; 0, -65]</P>
+    <P Name="Dst">331#rconn:1</P>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">332#lconn:1</P>
+      <P Name="Points">[0, -100]</P>
+    </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">337#lconn:1</P>
+      <P Name="Points">[-60, 0]</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">342#out:1</P>
+    <P Name="Dst">314#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">320#out:1</P>
+    <P Name="Dst">332#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">341#out:1</P>
+    <P Name="Dst">343#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">47</P>
+    <P Name="Src">335#rconn:1</P>
+    <P Name="Points">[70, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">330#lconn:1</P>
+      <P Name="Points">[0, -25]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">329#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">50</P>
+    <P Name="Src">316#out:1</P>
+    <P Name="Points">[23, 0; 0, 25]</P>
+    <P Name="Dst">342#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">51</P>
+    <P Name="Src">328#out:1</P>
+    <P Name="Dst">327#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">317#out:1</P>
+    <P Name="Points">[-45, 0]</P>
+    <P Name="Dst">329#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">344#out:1</P>
+    <P Name="Dst">325#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">54</P>
+    <P Name="Src">321#out:1</P>
+    <P Name="Points">[16, 0; 0, -35]</P>
+    <P Name="Dst">341#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">319#out:1</P>
+    <P Name="Points">[-35, 0]</P>
+    <P Name="Dst">331#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">56</P>
+    <P Name="Src">313#out:1</P>
+    <P Name="Points">[23, 0; 0, 30]</P>
+    <P Name="Dst">341#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">57</P>
+    <P Name="Src">337#rconn:1</P>
+    <P Name="Dst">340#lconn:1</P>
+  </Line>
+</System>
